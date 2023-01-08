@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "UnidreamLED";
+  src: url("UnidreamLED.ttf") format("truetype");
+}
+
+.coneNum {
+  font-family: "UnidreamLED";
+  font-size: 26px;
+  color: #febc01;
+  background: linear-gradient(180deg, #fecb01 0%, #fe4201 100%);
+  -webkit-background-clip: text;
+  white-space: nowrap;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,86 @@
+{
+  "map3d": {
+    "scene": {
+      "center": { "lat": 27.75, "lng": 102.276, "alt": 15217.8, "heading": 359.2, "pitch": -50 },
+      "scene3DOnly": false,
+      "shadows": false,
+      "removeDblClick": true,
+      "sceneMode": 3,
+      "showSun": true,
+      "showMoon": true,
+      "showSkyBox": true,
+      "showSkyAtmosphere": true,
+      "fog": true,
+      "fxaa": true,
+      "requestRenderMode": true,
+      "globe": {
+        "depthTestAgainstTerrain": false,
+        "baseColor": "#546a53",
+        "showGroundAtmosphere": true,
+        "enableLighting": false
+      },
+      "cameraController": {
+        "zoomFactor": 3.0,
+        "minimumZoomDistance": 1,
+        "maximumZoomDistance": 50000000,
+        "enableRotate": true,
+        "enableTranslate": true,
+        "enableTilt": true,
+        "enableZoom": true,
+        "enableCollisionDetection": true,
+        "minimumCollisionTerrainHeight": 15000,
+        "constrainedAxis": false
+      }
+    },
+    "control": {
+      "homeButton": true,
+      "baseLayerPicker": false,
+      "clockAnimate": true, 
+      "sceneModePicker": true,
+      "vrButton": false,
+      "fullscreenButton": true,
+      "navigationHelpButton": true,
+      "animation": false,
+      "timeline": true,
+      "infoBox": false,
+      "geocoder": false,
+      "selectionIndicator": false,
+
+      "contextmenu": { "hasDefault": true },
+      "mouseDownView": true,
+      "zoom": { "insertIndex": 1 },
+      "compass": { "bottom": "toolbar", "left": "5px" },
+      "distanceLegend": { "left": "100px", "bottom": "2px" ,"top": "10px"},
+      "locationBar": {
+        "fps": false,
+        "crs": "CGCS2000_GK_Zone_3",
+        "crsDecimal": 0,
+        "template": "<div>经度:{lng}</div> <div>纬度:{lat}</div> <div class='hide1000'>横{crsx}  纵{crsy}</div> <div>海拔：{alt}米</div> <div class='hide700'>层级：{level}</div><div>方向：{heading}°</div> <div>俯仰角：{pitch}°</div><div class='hide700'>视高：{cameraHeight}米</div>"
+      }
+    },
+    "templateValues": {
+      "dataServer": "//data.mars3d.cn",
+      "gltfServerUrl": "//data.mars3d.cn/gltf"
+    },
+    "terrain": {
+      "url": "//data.mars3d.cn/terrain",
+      "show": true
+    },
+    "basemaps": [
+      { "id": 10, "name": "地图底图", "type": "group" },
+      {
+        "id": 2021,
+        "pid": 10,
+        "name": "天地图影像",
+        "icon": "/img/basemaps/tdt_img.png",
+        "type": "group",
+        "layers": [
+          { "name": "底图", "type": "tdt", "layer": "img_d" },
+          { "name": "注记", "type": "tdt", "layer": "img_z" }
+        ],
+        "show": true
+      }
+    ],
+    "layers": []
+  }
+}
