@@ -538,6 +538,11 @@ const show = (name: string) => {
 离线部署部分图文件被放置在public文件夹下，并在打包发布时放置在应用根路径下，因此引用离线库、使用缩略图、引用已有样式时，可以使用离线库中的代码，离线库代码同时维护了three.js的内容
 
 ## 系统平台前端界面
+![error](2.png)
+
+![error](image2.png)
+
+![error](image3.png)
 
 
 
